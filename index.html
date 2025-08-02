@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/fullcalendar.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
     <!-- ======== Preloader =========== -->
@@ -22,6 +24,51 @@
     </div>
     <!-- ======== Preloader =========== -->
 
+    <div class="ad">
+      <div class="ad--header">
+        <h5>Welcom to this page</h5>
+        <button style="all: unset;" onclick="adel.remove()"><i class='bxr  bx-x'  ></i></button>
+      </div>
+     <div class="ad--body">
+      <h1>This admin panel made by:</h1>
+      <br>
+      <small><a href="https://github.com/PlainAdmin/plain-free-bootstrap-admin-template?tab=readme-ov-file#">
+        https://github.com/PlainAdmin/plain-free-bootstrap-admin-template?tab=readme-ov-file#
+      </a></small>
+      <br>
+      <small style="color: black; font-family: inherit;">Login form made by :<a href=""></a> sinaJD</small>
+     </div>
+    </div>
+    <div class="background--login">
+      <!-- <div class="help--admin">
+        <ul>
+          <li><a href=""></a>help</li>
+          <li><a href=""></a>change password</li>
+          <li><ul>
+            <li><a href=""></a>about me</li>
+            <li><a href=""></a>we github</li>
+          </ul></li>
+        </ul>
+      </div> -->
+      <div class="form--login ">
+
+        <h2>Login Admin</h2>
+
+        <form action="">
+          <div class="box name-admin">
+            <input type="text" placeholder="Admin">
+            <i class='bxr  bx-user'  ></i> 
+          </div>
+          <div class="box pasword-admin">
+            <input type="password" placeholder="*******">
+            <button id="btn-i--password" class="show-off"><i class='bxr  bx-eye-slash eye'  ></i></button>
+          </div>
+          <hr>
+          <button class="btn--login">Enter</button>
+          <small> &copf; all page is for sinaJDA</small>
+        </form>
+      </div>
+    </div>
     <!-- ======== sidebar-nav start =========== -->
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
@@ -1787,5 +1834,6 @@
       });
         // =========== chart four end
     </script>
+    <script src="./assets/js/login-form.js"></script>
   </body>
 </html>
