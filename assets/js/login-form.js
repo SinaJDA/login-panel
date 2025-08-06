@@ -1,5 +1,5 @@
-const pass_word = ;
-const name_adMIn = ;
+const pass_word = '125wxyz';
+const name_adMIn = 'Admin';
 
 const form_loding =document.querySelector('.form--login');
 
