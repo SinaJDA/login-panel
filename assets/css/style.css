@@ -98,10 +98,11 @@
     height: 30%;
     background: rgba( 255 , 255, 255, 0.9);
     border: 2px solid rgb(255, 255, 255);
-    z-index: 1000;
+    z-index: 1100;
     box-shadow: 0 0 10px gray;
     visibility: hidden ;
 }
+
 
 .ad--header{
     height: 45px;
@@ -129,6 +130,45 @@
     box-shadow: 0 0 10px rgb(111,255, 0);
 }
 
+.help--admin{
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    border-radius: 10px;
+    background: #ffffff;
+    color: gray;
+    color: black;
+}
+.help--admin i {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+}
+
+.help--admin .firstul{
+    position: relative;
+    top: 2px;
+    right: 53px;
+    width: 100px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: 0 0 10px gray;
+    visibility: hidden;
+}
+
+
+
+.help--admin .secendul li{
+    padding: 8px;
+}
+
+.help--admin .firstul li{
+    padding: 8px;
+}
+
 @keyframes error {
     20%{transform: rotate(2deg);}
     80%{transform: rotate(-5deg);}
@@ -154,9 +194,21 @@
         left: 80px;
         font-size: x-small;
      }
+     .help--admin{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .ad{
+        position: fixed;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 
-@media screen and (width <= 1048px){
+@media screen and (width <= 1024px){
     .form--login{
         width: 80%;
         height: 70%;
@@ -171,4 +223,5 @@
         left: 80px;
         font-size: x-small;
      }
+    
 }

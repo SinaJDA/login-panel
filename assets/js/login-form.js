@@ -1,5 +1,5 @@
-const pass_word = '125wxyz';
-const name_adMIn = 'Admin';
+const pass_word = ;
+const name_adMIn = ;
 
 const form_loding =document.querySelector('.form--login');
 
@@ -22,6 +22,13 @@ const adel = document.querySelector('.ad')
 
 document.body.classList.add('over');
 
+const btn_i = document.querySelector('.help--admin i');
+
+const ul_list = document.querySelector('.firstul');
+
+const btn_about = document.getElementById('about');
+
+const adbody = document.querySelector('.ad--body');
 
 inter_btn.addEventListener('click', function(e){
 
@@ -85,3 +92,40 @@ show_offbtn.addEventListener('mousedown', function(e){
     }
 });
  
+
+
+btn_i.addEventListener('click', function(){
+
+    if(ul_list.style.visibility == 'hidden'){ 
+        ul_list.style.visibility = 'visible';
+    }else{
+        ul_list.style.visibility = 'hidden';
+    }
+   
+});
+
+
+btn_about.addEventListener('click',function(){
+    if(adel.style.visibility == 'hidden'){
+        adel.style.visibility = 'visible';
+
+        adbody.innerHTML = `
+        <small>Hi! I'm Sina — a web designer and front-end developer passionate about creating modern and engaging user experiences. I'm constantly learning and love sharing what I discover along the way. My focus is on building websites that are both visually appealing and functional. On this site, you’ll find 
+        my portfolio, skills, and the journey I'm on as a developer.</small>
+  <br>
+
+  <small style="color: black; font-family: inherit;">Login form made by :<a href=""></a> sinaJD</small>
+`;
+    }else{
+       adel.style.visibility = 'hidden';
+       adbody.innerHTML=`
+        <h1>This admin panel made by:</h1>
+      <br>
+      <small><a href="https://github.com/PlainAdmin/plain-free-bootstrap-admin-template?tab=readme-ov-file#">
+        https://github.com/PlainAdmin/plain-free-bootstrap-admin-template?tab=readme-ov-file#
+      </a></small>
+      <br>
+      <small style="color: black; font-family: inherit;">Login form made by :<a href=""></a> sinaJD</small>
+       `
+    }
+});
